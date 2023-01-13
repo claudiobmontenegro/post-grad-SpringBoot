@@ -36,7 +36,7 @@ public class DisciplinaResource {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping
+    @PutMapping("/alterar/{id}")
     public ResponseEntity<Disciplina> alterar(@RequestBody Disciplina disciplina){
         return ResponseEntity.ok(disciplinaService.alterar(disciplina));
     }

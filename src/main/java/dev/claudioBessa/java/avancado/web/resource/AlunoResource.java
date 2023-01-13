@@ -37,7 +37,7 @@ public class AlunoResource {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping
+    @PutMapping("/alterar/{id}")
     public ResponseEntity<Aluno> alterar(@RequestBody Aluno aluno){
         return ResponseEntity.ok(alunoService.alterar(aluno));
     }
